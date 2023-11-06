@@ -38,10 +38,10 @@ type TPersonalInfo = {
 export const personalInfo: TPersonalInfo = {
   name: 'Kaustav',
   designation: 'Frontend Developer',
-  desc: `I'm a Front-End Developer who loves working with React. I specialize in turning creative designs into amazing web experiences. Let's create web magic together`,
-  exp: `As an experienced React developer, I excel in creating front-end web applications using HTML, CSS, JavaScript, React, Redux, Material UI, Ant Design, and Bootstrap. I've built user interfaces for static websites, consumer apps, and admin portals.
-  I'm skilled in API integration using Axios and Apollo, with strong analytical and problem-solving abilities. My expertise extends to collaboration, version control with Git/GitHub, and effective communication.
-  I'm ready to tackle challenges and drive project success with my technical skills and solution-oriented mindset.`,
+  desc: `Hello, I'm Kaustav, a passionate Front-End Developer with a deep love for crafting exceptional web experiences using React. I have a knack for transforming creative designs into captivating websites, and I'm eager to collaborate on your next digital project.`,
+  exp: `My journey as a React developer has been a rewarding one. I specialize in building front-end web applications, utilizing the magic of HTML, CSS, and JavaScript, and weaving in the power of React, Redux, Material UI, and more. I've contributed to projects ranging from static websites to user-friendly apps and versatile admin portals.
+  I'm well-versed in the art of seamless API integration using Axios and Apollo, and I pride myself on my strong analytical and problem-solving skills. Collaboration is key for me, and I'm skilled in the mystical ways of Git and GitHub for version control. Effective communication is at the heart of what I do.
+  Ready to take on challenges and drive the success of your projects with my technical expertise and solution-oriented mindset.`,
   skills: [
     { title: 'html', img: HTML },
     { title: 'css', img: CSS },

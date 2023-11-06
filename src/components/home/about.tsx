@@ -37,7 +37,7 @@ const About: React.FC = () => {
             <img
               src={personalInfo.displayImage}
               alt="kaustav"
-              className="w-64 h-64 rounded-full shadow-lg"
+              className="w-64 h-64 rounded-full shadow-lg mb-5"
             />
           </div>
           <div className="text-center md:text-left">
