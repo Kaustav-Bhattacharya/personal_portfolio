@@ -1,11 +1,10 @@
-import { Footer, Home, NavBar } from "./layout";
-
+import { Footer, Home, NavBar } from './layout';
 
 const App = () => {
   return (
     <>
-      <NavBar/>
-      <Home/>
+      <NavBar />
+      <Home />
       <Footer />
     </>
   );

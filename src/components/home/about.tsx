@@ -1,11 +1,11 @@
-import { personalInfo } from "@/constants";
-import { Button } from "../ui/button";
+import { personalInfo } from '@/constants';
+import { Button } from '../ui/button';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip';
 
 const TechStack: React.FC = () => {
   return (

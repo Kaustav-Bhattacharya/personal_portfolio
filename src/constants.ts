@@ -13,26 +13,24 @@ import {
   to_do,
   admin_dashboard,
   display,
-  resumeFile
-} from "./assets";
-
-
+  resumeFile,
+} from './assets';
 
 type TPersonalInfo = {
   desc: string;
   exp: string;
   skills: {
-    img: string
-    title: string
-  }[]
-  displayImage: string
-  name: string
-  designation: string
-  resume: string
+    img: string;
+    title: string;
+  }[];
+  displayImage: string;
+  name: string;
+  designation: string;
+  resume: string;
   social: {
     linkedin: string;
     github: string;
-  }
+  };
 };
 
 export const personalInfo: TPersonalInfo = {
@@ -57,19 +55,18 @@ export const personalInfo: TPersonalInfo = {
   displayImage: display,
   resume: resumeFile,
   social: {
-    github: "https://github.com/Kaustav-Bhattacharya",
-    linkedin: "https://www.linkedin.com/in/kaustav01bhattacharya/",
-  }
+    github: 'https://github.com/Kaustav-Bhattacharya',
+    linkedin: 'https://www.linkedin.com/in/kaustav01bhattacharya/',
+  },
 };
 
-
 export type TProjects = {
-  gitLink: string
-  demoLink?: string
-  desc: string
-  name: string
-  snap: string
-}
+  gitLink: string;
+  demoLink?: string;
+  desc: string;
+  name: string;
+  snap: string;
+};
 
 export const projects: TProjects[] = [
   {
@@ -77,20 +74,20 @@ export const projects: TProjects[] = [
     desc: 'Keeping track of your monthly budget made easy.',
     name: 'Budget Planner',
     demoLink: 'https://budgeting-app-drab.vercel.app',
-    snap: budget_app
+    snap: budget_app,
   },
   {
     gitLink: 'https://github.com/Kaustav-Bhattacharya/To-Do',
     desc: 'effortlessly create and manage multiple lists.',
     name: 'To-Do List',
     demoLink: 'https://papaya-conkies-34be97.netlify.app/',
-    snap: to_do
+    snap: to_do,
   },
   {
     gitLink: '',
     desc: 'Demonstration of an informative admin Panel.',
     name: 'Admin Dashboard',
     demoLink: 'https://admin-ui-omega.vercel.app',
-    snap: admin_dashboard
+    snap: admin_dashboard,
   },
-]
+];

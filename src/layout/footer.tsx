@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import { TSocialLinkProps } from "./types";
-import { GITHUB,linkedin } from "@/assets";
-import { personalInfo } from "@/constants";
+import { TSocialLinkProps } from './types';
+import { GITHUB, linkedin } from '@/assets';
+import { personalInfo } from '@/constants';
 
 const Footer: React.FC = () => (
   <footer className="w-full  p-4 flex items-center justify-center h-16">

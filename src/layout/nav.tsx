@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { LOGO } from "@/assets";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { LOGO } from '@/assets';
 
 const NavBar: React.FC = () => {
   return (

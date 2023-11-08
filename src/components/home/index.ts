@@ -1,3 +1,3 @@
-export * from './about'
-export * from './work'
-export * from './projectCard'
+export * from './about';
+export * from './work';
+export * from './projectCard';
