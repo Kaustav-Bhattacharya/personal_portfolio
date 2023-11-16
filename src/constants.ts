@@ -14,6 +14,8 @@ import {
   admin_dashboard,
   display,
   resumeFile,
+  angular,
+  tailwind,
 } from './assets';
 
 type TPersonalInfo = {
@@ -37,20 +39,24 @@ export const personalInfo: TPersonalInfo = {
   name: 'Kaustav',
   designation: 'Frontend Developer',
   desc: `Hello, I'm Kaustav, a passionate Front-End Developer with a deep love for crafting exceptional web experiences using React. I have a knack for transforming creative designs into captivating websites, and I'm eager to collaborate on your next digital project.`,
-  exp: `My journey as a React developer has been a rewarding one. I specialize in building front-end web applications, utilizing the magic of HTML, CSS, and JavaScript, and weaving in the power of React, Redux, Material UI, and more. I've contributed to projects ranging from static websites to user-friendly apps and versatile admin portals.
-  I'm well-versed in the art of seamless API integration using Axios and Apollo, and I pride myself on my strong analytical and problem-solving skills. Collaboration is key for me, and I'm skilled in the mystical ways of Git and GitHub for version control. Effective communication is at the heart of what I do.
-  Ready to take on challenges and drive the success of your projects with my technical expertise and solution-oriented mindset.`,
+  exp: `As a web developer, I specialize in crafting front-end applications using HTML, CSS, and JavaScript. My expertise spans React, Angular, React.js, and TypeScript. I've contributed to a variety of projects, from static websites to user-friendly apps and admin portals.
+
+  Seamless API integration is my forte, employing tools like Axios and Apollo. Proficient in Git and GitHub, I prioritize effective communication and collaboration.
+  
+  Ready to conquer challenges, I bring a solution-oriented mindset to drive the success of your projects.`,
   skills: [
     { title: 'html', img: HTML },
     { title: 'css', img: CSS },
-    { title: 'git', img: GIT },
-    { title: 'github', img: GITHUB },
     { title: 'javascript', img: JS },
     { title: 'typescript', img: TS },
     { title: 'React', img: REACT },
+    { title: 'Angular', img: angular },
+    { title: 'git', img: GIT },
+    { title: 'github', img: GITHUB },
     { title: 'Vite', img: VITE },
     { title: 'Jest', img: JEST },
     { title: 'Cypress', img: CYPRESS },
+    { title: 'Tailwind', img: tailwind },
   ],
   displayImage: display,
   resume: resumeFile,
