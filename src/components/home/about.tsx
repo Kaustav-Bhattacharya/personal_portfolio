@@ -30,7 +30,7 @@ const TechStack: React.FC = () => {
 
 const About: React.FC = () => {
   return (
-    <div className="mt-8 flex justify-center items-center">
+    <div id='about' className="mt-8 flex justify-center items-center">
       <div className="w-full max-w-4xl">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex justify-center md:justify-start">

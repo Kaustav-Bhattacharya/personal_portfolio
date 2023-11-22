@@ -97,3 +97,38 @@ export const projects: TProjects[] = [
     snap: admin_dashboard,
   },
 ];
+
+
+type TNavList = {
+  href: string;
+  icon: string;
+  title: string;
+}[];
+
+export const NavList: TNavList = [
+  {
+    href: "#home",
+    icon: "Home",
+    title: "Home",
+  },
+  {
+    href: "#about",
+    icon: "User",
+    title: "About",
+  },
+  {
+    href: "#skills",
+    icon: "Layers",
+    title: "Skills",
+  },
+  {
+    href: "#projects",
+    icon: "Image",
+    title: "Projects",
+  },
+  {
+    href: "#contact",
+    icon: "MessageSquare",
+    title: "Contact",
+  },
+];
