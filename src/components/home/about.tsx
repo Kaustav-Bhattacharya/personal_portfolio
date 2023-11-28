@@ -1,36 +1,23 @@
 import { personalInfo } from '@/constants';
 import { Button } from '../ui/button';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
+import { motion } from 'framer-motion';
 
-const TechStack: React.FC = () => {
-  return (
-    <div className="mt-4 flex justify-center items-center">
-      <div className="flex flex-wrap p-4 justify-center gap-4 md:gap-5">
-        {personalInfo.skills.map((skill, index) => (
-          <TooltipProvider key={index}>
-            <Tooltip>
-              <TooltipTrigger>
-                <img src={skill.img} alt="skill-icon" className="h-12" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>{skill.title}</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        ))}
-      </div>
-    </div>
-  );
+const skillAnimationVariant = {
+  initial: {
+    opacity: 0,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    transition: {
+      ease: "easeIn",
+      delay: 0.1 * index,
+    },
+  }),
 };
 
 const About: React.FC = () => {
   return (
-    <div id='about' className="mt-8 flex justify-center items-center">
+    <div id="about" className="mt-16 flex justify-center items-center">
       <div className="w-full max-w-4xl">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex justify-center md:justify-start">
@@ -66,10 +53,43 @@ const About: React.FC = () => {
           <p className="text-dark font-medium mt-2">{personalInfo.exp}</p>
         </div>
 
-        <div className="mt-3">
-          <h3 className="text-xl font-semibold text-dark text-center">SKILL SETS</h3>
-          <div className="mt-2">
-            <TechStack />
+        <div className="mt-16 flex flex-col justify-center items-center">
+          <h3 className="text-xl font-semibold text-dark text-center">
+            My Skills
+          </h3>
+          <div className="flex justify-center items-center mt-4 w-3/4">
+            <div className="flex flex-wrap md:gap-2">
+              {personalInfo.skills.map((skill, index) => (
+                <motion.div
+                  variants={skillAnimationVariant}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{
+                    once: true,
+                  }}
+                  custom={index}
+                  key={index}
+                  className="
+                    p-2.5
+                    px-6
+                    text-sm 
+                    w-auto
+                    bg-background 
+                    rounded 
+                    font-semibold 
+                    text-muted-foreground
+                    transition 
+                    duration-300 
+                    ease-in-out 
+                    hover:text-foreground
+                    hover:bg-muted
+                    shadow-md
+                    "
+                >
+                  {skill.title}
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

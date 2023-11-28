@@ -3,7 +3,7 @@ import { ProjectCard } from '.';
 
 const Work = () => {
   return (
-    <div id='projects' className="w-full max-w-4xl mt-8 flex flex-col items-center">
+    <div id='projects' className="w-full max-w-4xl mt-16 flex flex-col items-center">
       <h2 className="text-2xl text-dark ">Projects</h2>
       <div className="flex flex-wrap justify-center gap-5 my-9">
         {projects.map((project) => (

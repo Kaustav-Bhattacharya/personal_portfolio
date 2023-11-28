@@ -5,7 +5,7 @@ import { GITHUB, linkedin } from '@/assets';
 import { personalInfo } from '@/constants';
 
 const Footer: React.FC = () => (
-  <footer className="w-full  p-4 flex items-center justify-center h-16">
+  <footer className="w-full mt-16  p-4 flex items-center justify-center h-16">
     <div className="flex gap-5 items-center m-5">
       <SocialLink
         href={personalInfo.social.github}
