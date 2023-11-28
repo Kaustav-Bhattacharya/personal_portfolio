@@ -58,7 +58,7 @@ const About: React.FC = () => {
             My Skills
           </h3>
           <div className="flex justify-center items-center mt-4 w-3/4">
-            <div className="flex flex-wrap md:gap-2">
+            <div className="flex flex-wrap gap-2 md:gap-2">
               {personalInfo.skills.map((skill, index) => (
                 <motion.div
                   variants={skillAnimationVariant}
