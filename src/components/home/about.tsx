@@ -67,7 +67,7 @@ const About: React.FC = () => {
         </div>
 
         <div className="mt-3">
-          <h3 className="text-xl font-semibold text-dark">SKILL SETS</h3>
+          <h3 className="text-xl font-semibold text-dark text-center">SKILL SETS</h3>
           <div className="mt-2">
             <TechStack />
           </div>

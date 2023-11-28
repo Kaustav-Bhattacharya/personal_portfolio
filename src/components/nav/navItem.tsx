@@ -1,5 +1,5 @@
-import React from "react";
-import NavIcon from "./icon";
+import React from 'react';
+import NavIcon from './icon';
 
 type TNavIem = {
   href: string;
@@ -8,22 +8,21 @@ type TNavIem = {
 };
 
 const NavItem: React.FC<TNavIem> = ({ href, icon, title }) => {
-  
   const scrollToSection = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
-  
+
     const targetId = href.substring(1); // Remove the "#" from the href
     const targetElement = document.getElementById(targetId);
-  
+
     if (targetElement) {
-      const navbar = document.querySelector('.nav'); // Replace with the actual class of your navbar
+      const navbar = document.querySelector('.nav'); 
       const navbarHeight = navbar ? navbar.clientHeight : 0;
-  
+
       const targetPosition = targetElement.offsetTop - navbarHeight;
-  
+
       window.scrollTo({
         top: targetPosition,
-        behavior: "smooth",
+        behavior: 'smooth',
       });
     }
   };
@@ -44,7 +43,7 @@ const NavItem: React.FC<TNavIem> = ({ href, icon, title }) => {
           flex-col
           items-center
           justify-center
-        "
+          "
         onClick={scrollToSection}
       >
         <NavIcon name={icon} />

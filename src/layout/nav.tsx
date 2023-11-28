@@ -17,10 +17,10 @@ const NavBar = () => {
       fixed
       bottom-0
       w-full
+      lg:w-3/5
       z-10
       sm:fixed
       sm:top-0
-      shadow-sm
       bg-background
       nav
       "

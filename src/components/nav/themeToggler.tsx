@@ -18,13 +18,10 @@ const ThemeToggler = () => {
       onPressedChange={() => {
         setPressed(!pressed);
       }}
-      variant='default'
+      variant="default"
+      className="rounded-full"
     >
-      {theme === 'light' ? (
-        <Moon/>
-      ) : (
-        <Sun/>
-      )}
+      {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
     </Toggle>
   );
 };

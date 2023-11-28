@@ -4,9 +4,13 @@ import { Footer, Home, NavBar } from './layout';
 const App = () => {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <NavBar />
-      <Home />
-      <Footer />
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="w-full lg:w-3/5">
+          <NavBar />
+          <Home />
+          <Footer />
+        </div>
+      </div>
     </ThemeProvider>
   );
 };
