@@ -28,11 +28,13 @@ const ProjectCard: React.FC<TProjects> = ({
         <img src={snap} alt="project_snap" className="w-80 h-24" />
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button size={'sm'} className="rounded-xl" variant="outline">
-          <a href={gitLink} target="_blank" className="no-underline">
-            Code
-          </a>
-        </Button>
+        {gitLink && (
+          <Button size={'sm'} className="rounded-xl" variant="outline">
+            <a href={gitLink} target="_blank" className="no-underline">
+              Code
+            </a>
+          </Button>
+        )}
         {demoLink && (
           <Button size={'sm'} className="rounded-xl">
             <a href={demoLink} target="_blank" className="no-underline">

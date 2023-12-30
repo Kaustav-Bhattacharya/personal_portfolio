@@ -5,7 +5,7 @@ const App = () => {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className="flex items-center justify-center min-h-screen">
-        <div className="w-full lg:w-3/5">
+        <div className="w-full md:w-4/5 lg:w-3/5">
           <NavBar />
           <Home />
           <Footer />

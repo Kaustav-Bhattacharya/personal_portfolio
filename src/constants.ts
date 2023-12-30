@@ -67,7 +67,7 @@ export const personalInfo: TPersonalInfo = {
 };
 
 export type TProjects = {
-  gitLink: string;
+  gitLink?: string;
   demoLink?: string;
   desc: string;
   name: string;
@@ -75,6 +75,12 @@ export type TProjects = {
 };
 
 export const projects: TProjects[] = [
+  {
+    desc: 'Stay updated with your peers by sharing moments with this app',
+    name: 'Snapgram',
+    demoLink: 'https://snapgram-ten-puce.vercel.app',
+    snap: budget_app,
+  },
   {
     gitLink: 'https://github.com/Kaustav-Bhattacharya/budgeting_app',
     desc: 'Keeping track of your monthly budget made easy.',
