@@ -9,7 +9,7 @@ const skillAnimationVariant = {
   animate: (index: number) => ({
     opacity: 1,
     transition: {
-      ease: "easeIn",
+      ease: 'easeIn',
       delay: 0.1 * index,
     },
   }),
@@ -54,9 +54,19 @@ const About: React.FC = () => {
         </div>
 
         <div className="mt-16 flex flex-col justify-center items-center">
-          <h3 className="text-xl font-semibold text-dark text-center">
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: {
+                ease: 'easeIn',
+                delay: 0.3
+              },
+            }}
+            className="text-xl font-semibold text-dark text-center"
+          >
             My Skills
-          </h3>
+          </motion.h3>
           <div className="flex justify-center items-center mt-4 w-3/4">
             <div className="flex flex-wrap gap-2 md:gap-2">
               {personalInfo.skills.map((skill, index) => (
